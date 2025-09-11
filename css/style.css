@@ -59,7 +59,7 @@
 
 .header__link:hover,
 .header__link:focus{
-    
-    fill: var(--hover-color);
+
+    color: var(--hover-color);
     
 }
