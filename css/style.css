@@ -6,7 +6,9 @@
 .main{
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    background-position: left;
+    
 }
 
 .header {
@@ -31,9 +33,8 @@
 
 .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    justify-content: baseline;
 }
 
 .header__list {
