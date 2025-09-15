@@ -158,6 +158,8 @@ body {
 .form {
     width: 740px;
     margin: 0 auto;
+    position: relative;
+    height: 35px;
 }
 
 .hero__input {
@@ -168,6 +170,7 @@ body {
     border-bottom-left-radius: 20px;
     font-weight: 400;
     font-size: 12px;
+    border-right: none;
 }
 
 .hero__btn {
@@ -178,5 +181,5 @@ body {
     border-bottom-right-radius: 20px;
     display: inline-block;
     margin-top: -10px;
- 
+    position: absolute;
 }
