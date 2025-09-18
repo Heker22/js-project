@@ -2,6 +2,8 @@
     --background-color: #000;
     --hover-color: #0ab226;
     --btn-color: #cac7c7;
+    --form-color: #d7d7d7;
+    --normal-color: #fffdfd;
 
 }
 
@@ -157,7 +159,6 @@ body {
 
 .form {
     width: 230px;
-    margin: 0 auto;
     position: relative;
     height: 35px;
 }
@@ -187,10 +188,119 @@ body {
     bottom: 0;
 }
 
-.hero__box{
+.hero__box {
 
-    display: flex; 
+    display: flex;
     justify-content: center;
     gap: 149px;
-    
+
+}
+
+.second {
+    padding-top: 36px;
+}
+
+.second__input {
+    width: 115px;
+    height: 35px;
+    background-color: var(--btn-color);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    border-right: none;
+    padding: 10px;
+}
+
+
+.third {
+    padding-top: 36px;
+}
+
+.third__box {
+    display: flex;
+    gap: 104px;
+    width: 600px;
+    padding-left: 160px;
+    margin: 0 auto;
+
+}
+
+.third__list {
+    display: flex;
+    gap: 38px;
+}
+
+.third__click {
+    border-radius: 20px;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-color);
+    cursor: pointer;
+
+
+}
+
+.third__word {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+
+.third__btn {
+    padding: 10px 20px;
+    background-color: var(--background-color);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--btn-color);
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.four {
+    padding-top: 36px;
+}
+
+
+.four__box {
+    width: 630px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+
+.four__input {
+    border-radius: 20px;
+    padding: 10px;
+    width: 135px;
+    background-color: var(--form-color);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--btn-color);
+    border: 1px solid var(--form-color);
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    height: 35px;
+}
+
+
+.four__btn {
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--background-color);
+    color: var(--normal-color);
+
+}
+
+
+.four__numb{
+    width: 62px;
+    height: 62px;
 }
