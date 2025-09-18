@@ -33,7 +33,7 @@ a {
 
 
 .container {
-    width: 1200px;
+    width: 1120px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -156,7 +156,7 @@ body {
 
 
 .form {
-    width: 740px;
+    width: 230px;
     margin: 0 auto;
     position: relative;
     height: 35px;
@@ -171,6 +171,7 @@ body {
     font-weight: 400;
     font-size: 12px;
     border-right: none;
+    padding: 10px;
 }
 
 .hero__btn {
@@ -179,7 +180,17 @@ body {
     background-color: var(--background-color);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    bottom: 1px solid var(--background-color);
     display: inline-block;
     margin-top: -10px;
     position: absolute;
+    bottom: 0;
+}
+
+.hero__box{
+
+    display: flex; 
+    justify-content: center;
+    gap: 149px;
+    
 }
