@@ -39,6 +39,7 @@ a {
     width: 1120px;
     margin: 0 auto;
     padding: 0 15px;
+    background-color: var(--normal-color);
 }
 
 img {
@@ -60,6 +61,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
+    
 
 }
 
@@ -174,6 +176,7 @@ body {
     font-size: 12px;
     border-right: none;
     padding: 10px;
+    border: 1px solid var(--btn-color);
 }
 
 .hero__btn {
@@ -211,6 +214,7 @@ body {
     font-size: 12px;
     border-right: none;
     padding: 10px;
+        border: 1px solid var(--btn-color);
 }
 
 
@@ -293,7 +297,6 @@ body {
 
 .four__btn {
     border-radius: 20px;
-    padding: 5px 10px;
     width: 25px;
     height: 25px;
     background-color: var(--background-color);
@@ -341,6 +344,7 @@ body {
     border-right: none;
     padding: 10px;
     margin-left: 80px;
+    border: 1px solid var(--btn-color);
 }
 
 
@@ -354,4 +358,33 @@ body {
     display: flex;
     gap: 33px;
     align-items: center;
+}
+
+.dino{
+    padding-bottom: 37px;
+    margin-bottom: 300px;
+}
+.dino__box{
+    background-image: url(../img/background-dino.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.dino__one{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 65px;
+    left: 100px;
+}
+
+
+.dino__two{
+    width:90px;
+    position: absolute;
+
 }
