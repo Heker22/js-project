@@ -139,13 +139,13 @@ body {
 }
 
 
-.hero__line {
+.line {
 
     width: 536px;
-    height: 1px;
+    height: 2px;
     background-color: var(--background-color);
-    display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 36px;
 }
 
@@ -352,7 +352,7 @@ body {
 
 .time__line {
     width: 100px;
-    height: 1px;
+    height: 2px;
     background-color: var(--background-color);
 }
 
