@@ -267,8 +267,20 @@ body {
     border-radius: 20px;
     display: block;
     margin: 0 auto;
-    cursor: pointer;
+    cursor: pointer;  
+    border: 1px solid transparent;
+}   
+
+.third__btn:hover,
+.third__btn:focus {
+
+    color: var(--hover-color);
+    background-color: var(--normal-color);
+    border: 1px solid var(--hover-color);
+
+
 }
+
 
 .four {
     padding-top: 36px;
@@ -544,6 +556,15 @@ body {
     color: var(--normal-color);
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
     width: fit-content;
+    border: 1px solid transparent;
+}
+
+
+.find__btn:hover,
+.find__btn:focus {
+    color: var(--hover-color);
+    background-color: var(--normal-color);
+    border: 1px solid var(--hover-color);
 }
 
 .footer {
