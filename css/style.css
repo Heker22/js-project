@@ -164,7 +164,8 @@ body {
 
 
 
-.form {
+.form, 
+.second-form {
     width: 230px;
     position: relative;
     height: 35px;
