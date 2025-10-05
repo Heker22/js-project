@@ -164,12 +164,20 @@ body {
 
 
 
-.form, 
+
 .second-form {
     width: 230px;
     position: relative;
     height: 35px;
 }
+
+.form
+ {
+    width: 230px;
+    position: relative;
+    height: 35px;
+}
+
 
 .hero__input {
     width: 215px;
