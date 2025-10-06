@@ -1,14 +1,15 @@
 
-const secretNumber = Math.floor(Math.random() * 10) + 1;
 
 const secondForm = document.querySelector('.second-form');
 
 const secondInput = document.querySelector('.second__input');
 
-const secondText = document.querySelector('second__text');
+const secondText = document.querySelector('.second__text');
 
 secondForm.addEventListener('submit', function(e){
     e.preventDefault();
+
+    const secretNumber = Math.floor(Math.random() * 10) + 1;
 
     const guess = parseInt(secondInput.value.trim());
 
