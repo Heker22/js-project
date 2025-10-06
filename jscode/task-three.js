@@ -32,19 +32,15 @@ function playRound() {
     if (userChoice === computerChoice) {
         result = 'Нічия';
         resultText.style.color = 'orange'
-    }
-
-    else if (
+    } else if (
         (userChoice === 'камінь' && computerChoice === 'ножиці') ||
         (userChoice === 'ножиці' && computerChoice === 'папір') ||
         (userChoice === 'папір' && computerChoice === 'камінь')
-    ) {
+    ){
         result = 'Ви виграли раунд!'
         resultText.style.color = 'green'
         userScore++;
-    }
-
-    else {
+    } else {
         result = 'Комп’ютер виграв!'
         resultText.style.color = 'red'
         computerScore++;
