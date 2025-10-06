@@ -82,34 +82,34 @@
                 </div>
                 <div class="third">
                     <div class="line"></div>
-                    <h2 class="hero__subtitle">Камінь - ножиці - папір</h2>
+                    <h2 class="hero__subtitle">камінь - ножиці - папір</h2>
                     <div class="third__box">
                         <ul class="third__list">
                             <li class="third__item">
-                                <button class="third__click">
+                                <button class="third__click" data-choice="камінь">
                                     <img src="./img/stone.png" alt="" class="third__img">
                                 </button>
                             </li>
                             <li class="third__item">
-                                <button class="third__click">
+                                <button class="third__click" data-choice="ножиці">
                                     <img src="./img/sissors.png" alt="" class="third__img">
                                 </button>
                             </li>
                             <li class="third__item">
-                                <button class="third__click">
+                                <button class="third__click"  data-choice="папір">
                                     <img src="./img/paper.png" alt="" class="third__img">
                                 </button>
                             </li>
                         </ul>
                         <div class="third__wrap">
                             <p class="third__text">Рахунок:</p>
-                            <p class="third__text">Комп’ютер - 0</p>
-                            <p class="third__text">Ви - 0</p>
+                            <p class="third__text" id="computerScore">Комп’ютер - 0</p>
+                            <p class="third__text" id="userScore">Ви - 0</p>
                         </div>
 
                     </div>
-                    <p class="third__word">Починаємо грати!</p>
-                    <button class="third__btn">
+                    <p class="third__word"  id="resultText">Починаємо грати!</p>
+                    <button class="third__btn"  id="computerChoiceBtn">
                         Варіант комп’ютера
                     </button>
                 </div>
