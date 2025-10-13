@@ -1,6 +1,6 @@
 const firstInput = document.querySelector('.four__input.first');
 
-const secondInput = document.querySelector('.four__input.second');
+const secondInp = document.querySelector('.four__input.second');
 
 const result = document.querySelector('.four__result');
 
@@ -21,9 +21,9 @@ opButtons.forEach(btn => {
 
 resBtn.addEventListener('click', () => {
     const num1 = parseFloat(firstInput.value);
-    const num2 = parseFloat(secondInput.value);
+    const num2 = parseFloat(secondInp.value);
 
-    if (isNaN(nam1) || isNaN(nam2)) {
+    if (isNaN(num1) || isNaN(num2)) {
         result.textContent = 'Please insert a number!'
         return
     }
@@ -53,7 +53,7 @@ resBtn.addEventListener('click', () => {
             break;
     }
 
-    result.textContent = `Result: ${res} `
+    result.textContent = res
 })
 
 

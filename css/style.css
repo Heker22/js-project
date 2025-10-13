@@ -344,8 +344,8 @@ body {
     width: 135px;
     background-color: var(--form-color);
     font-weight: 400;
-    font-size: 12px;
-    color: var(--color);
+    font-size: 14px;
+    color: var(--background-color);
     border: 1px solid var(--form-color);
 
     height: 35px;
