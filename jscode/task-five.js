@@ -13,6 +13,7 @@ fiveForm.addEventListener('submit', (e) =>{
 
     if(isNaN(value) || value < 0 ){
         fiveText.textContent = 'Please insert a number'
+        fiveText.style.color = 'orange';
 
         return
     }

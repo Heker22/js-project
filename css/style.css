@@ -8,7 +8,7 @@
     --fotball: #5abb58;
     --icons: #5ddce1;
     --div-color: #d9d9d9;
-    --game-over-color: #ff0606;
+    --game-over-color: #ff4646;
 
 }
 
@@ -411,7 +411,6 @@ body {
     position: absolute;
     left: 100px;
     bottom: 0px;
-    border: 1px solid red;
 }
 
 
@@ -420,7 +419,6 @@ body {
     position: absolute;
     right: -100px;
     bottom: 0px;
-    border: 1px solid red;
 }
 
 .dino__start {
@@ -455,6 +453,7 @@ body {
     position: absolute;
     top: 100px;
     left: 500px;
+    right: 50px;
 }
 
 .football__box {
@@ -540,6 +539,14 @@ body {
     width: 50px;
     height: 50px;
     fill: var(--icons);
+}
+
+.slide__arrows:hover,
+.slide__arrows:focus {
+
+    fill: var(--hover-color);
+
+
 }
 
 
