@@ -1,0 +1,33 @@
+
+const slides = document.querySelectorAll('.slide__item');
+
+const slideList = document.querySelector('.slide__list');
+
+const btns = document.querySelectorAll('.slide__btn');
+
+
+let index = 0;
+
+const slideWidth = slides[0].clientWidth;
+
+function moveslider (){
+    slideList.style.transform = `translateX(-${index * slideWidth}px)`;
+    slideList.style.transition = 'transform 0.4s ease';
+}
+
+
+btns[0].addEventListener('click', () => {
+
+    index--;
+    if(index < 0) index = slides.length-1;
+    moveslider();
+} )
+
+btns[1].addEventListener('click', () => {
+
+    index++;
+    if(index > slides.length-1) index = 0;
+    moveslider();
+})
+
+
