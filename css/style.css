@@ -400,7 +400,7 @@ body {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    
+
 
 }
 
@@ -546,6 +546,8 @@ body {
     border: none;
     cursor: pointer;
     display: block;
+    z-index: 99;
+    margin-top: 250px;
 }
 
 .slide__arrows {
@@ -558,37 +560,37 @@ body {
 .slide__arrows:focus {
 
     fill: var(--hover-color);
-
-
 }
 
 
-.slide__box{
+.slide__box {
     overflow: hidden;
     width: 100%;
     display: flex;
-    
+
 }
 
-.slide__list{
+.slide__list {
     display: flex;
     transition: transform 0.3s ease;
+    width: 100%;
+    margin-bottom: 37px;
 }
 
-.slide__item{
-    min-width: 100%;
+.slide__item {
+    width: 100%;
     flex-shrink: 0;
 }
 
-.slide__img{
-    width: 100%;
+.slide__img {
+    width: 95%;
     display: block;
     object-fit: cover;
     height: 600px;
 }
 
 .find {
-    padding-bottom: 37px;
+  margin-bottom: 37px;
 }
 
 .find__list {
@@ -637,6 +639,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 35px;
+    margin-bottom: 170px;
 }
 
 .find__btn {
