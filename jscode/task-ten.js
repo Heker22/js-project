@@ -150,7 +150,7 @@ const resetScientists = () => {
 btnBorn.addEventListener('click', () => {
   resetScientists();
   const filteredScientists = originalScientist.filter(scientist =>
-    scientist.born >= 1801 && scientists.born <= 1900
+    scientist.born >= 1801 && scientist.born <= 1900
   );
 
   updateCard(filteredScientists)
@@ -185,7 +185,7 @@ btnBornLate.addEventListener('click', () => {
   const latestBornScientist = originalScientist.reduce((latest, current) => 
   current.born > latest.born ? current : latest);
 
-  updateCard(latestBornScientist);
+  updateCard([latestBornScientist]);
 
 })
 
