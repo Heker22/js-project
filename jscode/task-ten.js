@@ -105,4 +105,13 @@ const btnSortYearsLived = document.getElementById('btnSortYearsLived');
 
 const btnBornLate = document.getElementById('btnBornLate');
 
-const btnAlbertBorn = document.getElementById('btnAlbertBorn')
+const btnAlbertBorn = document.getElementById('btnAlbertBorn');
+
+const btnSearchSurname = document.getElementById('btnSearchSurname');
+
+const btnDeleteName = document.getElementById('btnDeleteName');
+
+const btnLiveLess = document.getElementById('btnLiveLess');
+
+const btnSameLetters = document.getElementById('btnSameLetters');
+
