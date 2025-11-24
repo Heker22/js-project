@@ -115,3 +115,92 @@ const btnLiveLess = document.getElementById('btnLiveLess');
 
 const btnSameLetters = document.getElementById('btnSameLetters');
 
+const originalScientist = [...scientists];
+
+const scientistsItems = document.querySelectorAll('.find__item');
+
+const updateCard = (scientistsList = scientists) => {
+
+  scientistsItems.forEach((item, index) => {
+    item.innerHTML = '';
+
+    if (scientistsList[index]) {
+      const scientist = scientistsList[index];
+      const img = document.createElement('img');
+      img.src = scientist.img;
+      img.alt = `${scientist.name}`;
+      item.appendChild(img);
+    }
+
+    else {
+      item.style.backgroundColor = 'gray';
+    }
+  })
+};
+
+
+const resetScientists = () => {
+  scientistsItems.forEach(item => {
+    item.innerHTML = '';
+  });
+
+  updateCard(originalScientist);
+}
+
+btnBorn.addEventListener('click', () => {
+  resetScientists();
+  const filteredScientists = originalScientist.filter(scientist =>
+    scientist.born >= 1801 && scientists.born <= 1900
+  );
+
+  updateCard(filteredScientists)
+})
+
+btnSortAlphabet.addEventListener('click', () => {
+  resetScientists();
+
+  const sortedScientists = [...originalScientist].sort((a, b) =>
+    a.name.localeCompare(b.name));
+  updateCard(sortedScientists);
+});
+
+btnSortYearsLived.addEventListener('click', () => {
+  resetScientists();
+
+  const sortedScientists = [...originalScientist].sort((a, b) => {
+    const yearsLivedA = a.dead - a.born;
+
+    const yearsLivedB = b.dead - b.born;
+
+    return yearsLivedA - yearsLivedB
+
+
+  });
+  updateCard(sortedScientists);
+})
+
+btnBornLate.addEventListener('click', () => {
+  resetScientists();
+
+  const latestBornScientist = originalScientist.reduce((latest, current) => 
+  current.born > latest.born ? current : latest);
+
+  updateCard(latestBornScientist);
+
+})
+
+btnAlbertBorn.addEventListener('click', () => {
+
+  resetScientists();
+
+  const einstein = originalScientist.find(
+    scientist => scientist.name === 'Albert' && scientist.surname === 'Einstein'
+  );
+  if(einstein){
+    alert(`Albert Einstein was born in ${einstein.born} year`  )
+  }
+
+  else{
+    alert('Albert Einstein not found!')
+  }
+})
