@@ -129,7 +129,20 @@ const updateCard = (scientistsList = scientists) => {
       const img = document.createElement('img');
       img.src = scientist.img;
       img.alt = `${scientist.name}`;
+      img.style.height = '100px';
+      img.style.width = '100px'
+      img.style.backgroundPosition = 'center';
+      img.style.backgroundSize = 'cover';
+      img.style.borderRadius = '20px';
       item.appendChild(img);
+      const hoverEl = document.createElement('div');
+      hoverEl.classList.add('scientist__hover');
+      hoverEl.textContent = `${scientist.name} ${scientist.surname} `
+      hoverEl.style.textAlign = 'center';
+      hoverEl.style.marginTop = '10px';
+      item.appendChild(hoverEl);
+
+
     }
 
     else {
@@ -203,4 +216,52 @@ btnAlbertBorn.addEventListener('click', () => {
   else{
     alert('Albert Einstein not found!')
   }
+})
+
+
+btnSearchSurname.addEventListener('click', () => {
+  
+  resetScientists();
+
+  const filteredScientists = originalScientist.filter(
+    scientist => scientist.surname.startsWith('C')
+  );
+
+  updateCard(filteredScientists);
+})
+
+btnDeleteName.addEventListener('click', () => {
+
+  resetScientists();
+
+  const filteredScientists = originalScientist.filter(
+    scientist => !scientist.name.startsWith('A')
+  );
+
+  updateCard(filteredScientists);
+})
+
+
+btnLiveLess.addEventListener('click', () => {
+  resetScientists();
+
+  const maxYears = Math.max(...originalScientist.map(scientist => scientist.dead - scientist.born));
+
+  const minYears = Math.min(...originalScientist.map(scientist => scientist.dead - scientist.born));
+
+  const filteredScientists = originalScientist.filter(scientist => 
+    scientist.dead - scientist.born === maxYears || scientist.dead - scientist.born === minYears
+  );
+
+  updateCard(filteredScientists);
+})
+
+btnSameLetters.addEventListener('click', () => {
+  resetScientists();
+
+  const filteredScientists = originalScientist.filter(scientist => 
+    scientist.name.charAt(0) === scientist.surname.charAt(0)
+  );
+
+  updateCard(filteredScientists);
 })
